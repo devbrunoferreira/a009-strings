@@ -7,19 +7,21 @@ console.log(frase);
 console.log('');
 
 // b)
-const fraseTroca1 = frase.replace('verde', 'rosa');
-const fraseTroca2 = fraseTroca1.replace('azul', 'laranja');
+const fraseTroca = frase.replace('verde', 'rosa').replace('azul', 'laranja');
+// const fraseTroca2 = fraseTroca1.replace('azul', 'laranja');
 console.log('b)');
-console.log(fraseTroca2);
+console.log(fraseTroca);
 console.log('');
 
 // c)
 console.log('c)');
-console.log(`Inclui verde: ${fraseTroca2.includes('verde')} 
-Inclui laranja: ${fraseTroca2.includes('laranja')}`);
+console.log(`Inclui verde: ${fraseTroca.includes('verde')} 
+Inclui laranja: ${fraseTroca.includes('laranja')}`);
 console.log('');
 
 // EXTRA
 // Tente fazer o “mas não deixe o gato sair” ficar em maiúsculo, assim como o “BOAS VINDAS”
 console.log('(EXTRA)');
-console.log(fraseTroca2.slice(0, 76) + fraseTroca2.slice(76).toUpperCase());
+console.log(fraseTroca.slice(0, 76) + fraseTroca.slice(76).toUpperCase());
+
+// let frase1 = frase.replace('verde','rosa').replace('azul','laranja').replace('mas não deixe o gato sair','MAS NÃO DEIXE O GATO SAIR');
